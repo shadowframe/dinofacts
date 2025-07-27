@@ -1,23 +1,16 @@
 import streamlit as st
 import time
 
-st.title("dinoFacts 🦖")
-st.markdown("""
-Willkommen zu meiner App! 
-- **Dinos 🦖** nach :orange[*Namen*] suchen
-- **Dinos 🦖** nach :green[*Arten*] filtern
-""") 
+funfact = """
+Filtere :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
+"""
 
 def stream_data():
     for word in funfact.split(" "):
         yield word + " "
-        time.sleep(0.10)
+        time.sleep(0.30)
 
-
-funfact = """
-Du wusstest bestimmt schon, dass Dinos 🦖 vor Millionen von Jahren lebten.
-            
-Aber wusstest  du auch, dass du Dinos 🦖 in dieser App nach ihren Essgewohnheiten filtern kannst? Egal ob Allesfresser, Pflanzenfresser oder Fleischfresser, hier findest du die passenden Dinos 🦖!
-"""
-
+st.title("dinoFacts 🦖")
 st.write_stream(stream_data)
+ 
+ 

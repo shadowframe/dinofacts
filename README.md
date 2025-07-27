@@ -50,4 +50,7 @@ Standardmäßig läuft die Anwendung auf Port 8501. Wenn du einen anderen Port n
 
 `streamlit run 01_start_app.py --server.port=80`
 
-## 
+## Installation 02_fancyText_app.py
+
+
+

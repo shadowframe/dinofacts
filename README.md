@@ -14,7 +14,7 @@ Wechsle in das Verzeichnis:
 
 ### Erstelle eine Virtuelle Python Umgebung und aktiviere sie
 
-** Wenn du Windows nutzt beachte unbedingt,** dass die Befehle anders lauten als auf MacOS und Linux, du findetst die Windows Befehle auf folgender Seite:
+**Wenn du Windows nutzt beachte unbedingt,** dass die Befehle anders lauten als auf MacOS und Linux, du findetst die Windows Befehle auf folgender Seite:
 
 https://www.w3schools.com/python/python_virtualenv.asp
 

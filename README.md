@@ -26,11 +26,11 @@ https://www.w3schools.com/python/python_virtualenv.asp
 
 #### Option 1 requirements.txt
 
-Mithilfe der requirements.txt kann man per PythonPaketVerwaltung "pip" einfach viele Python Bibliotheken installieren ohne diese Einzeln eingeben zu müssen. Die requierements.txt beinhaltet den Namen jeden Pakets untereinander geschrieben.
+Mithilfe der requirements.txt kann man per PythonPaketVerwaltung "pip" einfach viele Python Bibliotheken installieren ohne diese Einzeln eingeben zu müssen. Die requirements.txt beinhaltet den Namen jeden Pakets untereinander geschrieben.
 
 `pip install -r requirements.txt`
 
-#### Option 2 PiP
+#### Option 2 pip
 
 `pip install streamlit`
 

@@ -2,7 +2,13 @@
 
 ## Beschreibung
 
-## Installation
+Die "dinofacts" Anwendung ist eine Streamlit App, die es ermöglicht, Informationen über Dinosaurier anzuzeigen. Die App nutzt eine einfache Benutzeroberfläche, um Daten über verschiedene Dinosaurierarten darzustellen.
+
+Die folgenden Kapitel der Readme beinhalten in der Bezeichnung immer die Python Datei, die für die jeweilige Funktionalität zuständig ist. 
+
+Weitere Informationen befinden sich im [Wiki](https://github.com/shadowframe/dinofacts/wiki) der Anwendung.
+
+## Installation 01_start_app.py
 
 ### Clone das Repo auf deinen Rechner oder Server:
 

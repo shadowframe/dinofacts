@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 funfact = """
-Filtere :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
+:rainbow[*Filtere*] :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
 """
 
 def stream_data():

@@ -38,4 +38,10 @@ Mithilfe der requirements.txt kann man per PythonPaketVerwaltung "pip" einfach v
 
 `streamlit run 01_start_app.py`
 
+### Port definieren
+
+Standardmäßig läuft die Anwendung auf Port 8501. Wenn du einen anderen Port nutzen möchtest, kannst du dies mit dem folgenden Befehl tun: 
+
+`streamlit run 01_start_app.py --server.port=80`
+
 ## 

@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 funfact = """ 
-:rainbow[*Filtere*] :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
+:rainbow[*Filtere*] :orange[*Namen*] , :green[*Arten*] und :violet[*Fortbewegungsarten*]
 """
 
 def stream_data():
@@ -12,5 +12,3 @@ def stream_data():
 
 st.title("dinoFacts 🦖")
 st.write_stream(stream_data)
-st.write(funfact)
-

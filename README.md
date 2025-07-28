@@ -53,7 +53,7 @@ Standardmäßig läuft die Anwendung auf Port 8501. Wenn du einen anderen Port n
 
 `streamlit run 01_start_app.py --server.port=80`
 
-## todo 02_fancyText_app.py
+## 02_fancyText_app.py
 
 Die Datei 02_fancyText_app.py ist eine Streamlit App, die es ermöglicht, Text in einer ansprechenden Weise darzustellen. Die App zeigt einen animierten Text, der nach und nach erscheint.
 
@@ -68,7 +68,7 @@ import time
 Als nächstes definieren wir den Text, der animiert angezeigt werden soll. Der Text wird in der Variable `funfact` gespeichert. Hierbei nutzen wir die [Markdown-Syntax](https://docs.streamlit.io/develop/api-reference/text/st.markdown) von Streamlit, um den Text zu formatieren. Emojis und Farben werden verwendet, um den Text ansprechender zu gestalten.
 ```
 funfact = """ 
-:rainbow[*Filtere*] :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
+:rainbow[*Filtere*] :orange[*Namen*] , :green[*Arten*] und :violet[*Fortbewegungsarten*]
 """
 ````
 

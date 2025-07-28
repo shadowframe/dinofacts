@@ -11,6 +11,13 @@ Weitere Informationen befinden sich im [Wiki](https://github.com/shadowframe/din
 ### Streamlit Framework
 [Streamlit](https://streamlit.io/) ist eine Open-Source-App-Framework. Schau dir das [streamlit cheat-cheat](https://docs.streamlit.io/develop/quick-reference/cheat-sheet) an oder lese die [Installationsanleitung](https://docs.streamlit.io/get-started/installation).
 
+## Daten
+
+Die Daten der Anwendung werden aus einer JSON-Datei geladen, die Informationen über Dinosaurier enthält. Die App bietet Funktionen zum Filtern und Suchen von Dinosauriern nach Namen, Arten und Fortbewegungsarten.
+
+Die Daten selbst stammen von Wikipedia und wurden von mir mithilfe von [restasaurus](https://github.com/vikiru/restasaurus) über die dort zur verfügung getellte [API](https://restasaurus.onrender.com/api/v1) abgerufen. 
+Dies führte zu mehreren JSON Dateien, die ich dann in eine einzige Datei zusammengeführt habe und im Nachgang deren Einträge zusätzlich nach deren ID sortiert habe. Diese JSON Dateien in unaufbereiteten Zustand befindet sich im Verzeichnis `data/raw` und die aufbereiteten Daten `dino.json` und `dino_names.json` im Verzeichnis `data`.
+
 ## Installation 01_start_app.py
 
 ### Clone das Repo auf deinen Rechner oder Server:

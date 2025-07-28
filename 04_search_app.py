@@ -17,7 +17,7 @@ def load_dino_data():
         return json.load(file)
 
 st.title("dinoFacts lala 🦖")
-st.write("Ich bin der Commit vom Server")
+st.write("Ich bin der Commit vom Macbook Air")
 st.write_stream(stream_data)
 
 # Display the loaded JSON data

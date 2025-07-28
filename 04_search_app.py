@@ -16,7 +16,7 @@ def load_dino_data():
     with open("data/dino_names.json", "r") as file:  # Adjust the path if necessary
         return json.load(file)
 
-st.title("dinoFacts 🦖")
+st.title("dinoFacts lala 🦖")
 st.write("Hallo Welt")
 st.write_stream(stream_data)
 

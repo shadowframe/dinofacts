@@ -207,4 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 # OSX
-.DS_Store
+/data/data_raw/.DS_Store

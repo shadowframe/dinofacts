@@ -18,7 +18,6 @@ def load_dino_data():
 
 st.title("dinoFacts 🦖")
 st.write_stream(stream_data)
-st.text(stream_data)
 
 # Display the loaded JSON data
 dino_data = load_dino_data()

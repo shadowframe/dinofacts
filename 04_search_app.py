@@ -5,7 +5,7 @@ import json
 funfact = """
 :rainbow[*Filtere*] :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
 """
-
+# lala
 def stream_data():
     for word in funfact.split(" "):
         yield word + " "

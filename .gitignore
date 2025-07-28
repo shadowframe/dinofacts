@@ -208,3 +208,9 @@ __marimo__/
 
 # OSX
 /data/data_raw/.DS_Store
+/.idea/.gitignore
+/.idea/dinofacts.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml

@@ -18,7 +18,6 @@ def load_dino_data():
 
 # Load the data
 dino_data = load_dino_data()
-x = str
 st.title("dinoFacts 🦖")
 
 

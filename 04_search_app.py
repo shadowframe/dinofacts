@@ -7,7 +7,7 @@ funfact = """
 """
 
 ### Functions ###
-
+print("Variable funfact wird an dieser Stelle ausgegeben")
 def stream_data():
     for word in funfact.split(" "):
         yield word + " "
@@ -18,10 +18,13 @@ def load_dino_data():
     with open("data/dino_names.json", "r") as file:  # Adjust the path if necessary
         return json.load(file)
 
+### Functions ###
+# fancy_text returns a stream of text from the stream_data function
 @st.fragment
 def fancy_text():
     st.write_stream(stream_data)
 
+# search creates a search bar and displays the selected dinosaur's name and ID
 @st.fragment
 def search():
     # Autocomplete search

@@ -6,6 +6,8 @@ funfact = """
 :rainbow[*Filtere*] :orange[*Namen*] | :green[*Arten*] | :violet[*Fortbewegungsarten*]
 """
 
+### Functions ###
+
 def stream_data():
     for word in funfact.split(" "):
         yield word + " "
@@ -16,17 +18,9 @@ def load_dino_data():
     with open("data/dino_names.json", "r") as file:  # Adjust the path if necessary
         return json.load(file)
 
-# Load the data
-dino_data = load_dino_data()
-st.title("dinoFacts 🦖")
-
-# Damit der animierte Text nicht bei jeder suche animiert wird,
-# sorgt st.fragment dafür, dass jedes fragment in einem eigenem Loop abläuft
 @st.fragment
-def my_fragment():
+def fancy_text():
     st.write_stream(stream_data)
-
-my_fragment()
 
 @st.fragment
 def search():
@@ -46,5 +40,13 @@ def search():
     if selected_dino_name:
         st.write(f"Selected Dinosaur Name: {selected_dino_name}")
         st.write(f"Selected Dinosaur ID: {selected_dino_id}")
+
+# Load the data of the dinosaurs names and id´s
+dino_data = load_dino_data()
+
+### GUI ###
+st.title("dinoFacts 🦖")
+
+fancy_text()
 
 search()

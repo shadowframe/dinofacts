@@ -20,7 +20,8 @@ def load_dino_data():
 dino_data = load_dino_data()
 st.title("dinoFacts 🦖")
 
-
+# Damit der animierte Text nicht bei jeder suche animiert wird,
+# sorgt st.fragment dafür, dass jedes fragment in einem eigenem Loop abläuft
 @st.fragment
 def my_fragment():
     st.write_stream(stream_data)

@@ -13,7 +13,7 @@ def stream_data():
         yield word + " "
         time.sleep(0.30)
 
-# Load the dino.json file
+# Load the dino_names.json file and parse it into a Python dictionary
 def load_dino_data():
     with open("data/dino_names.json", "r") as file:  # Adjust the path if necessary
         return json.load(file)

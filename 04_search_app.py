@@ -29,6 +29,15 @@ def get_diet_by_id(dino_data, dino_id):
             return dino.get("diet", "Diet information not available")
     return "Dinosaur with the given ID not found"
 
+def get_diet_image_by_diet(diet):
+    if diet == "herbivore":
+        return "https://example.com/herbivore_image.png"
+    if diet == "carnivore":
+        return "https://example.com/carnivore_image.png"
+    if diet == "omnivore":
+        return "https://example.com/omnivore_image.png"
+    return "https://example.com/default_image.png"
+
 
 
 ### Functions ###

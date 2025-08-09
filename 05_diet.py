@@ -31,12 +31,24 @@ def get_diet_by_id(dino_data, dino_id):
 
 def get_diet_image_by_diet(diet):
     if diet == "herbivore":
-        st.image("images/herbivore.png", caption="Herbivore diet image", width=100)
+        st.image("images/Herbivore.png", caption="Herbivore diet image", width=240)
     if diet == "carnivore":
-        st.image("images/carnivore.png", caption="Carnivore diet image", width=100)
+        st.image("images/Carnivore.png", caption="Carnivore diet image", width=240)
     if diet == "omnivore":
-        st.image("images/omnivore.png", caption="Omnivore diet image", width=100)
+        st.image("images/Omnivore.png", caption="Omnivore diet image", width=240)
 
+def get_locomotion_by_id(dino_data, dino_id):
+    # Search for the dinosaur with the matching ID
+    for dino in dino_data:
+        if dino.get("id") == dino_id:
+            return dino.get("locomotionType", "Locomotion information not available")
+    return "Dinosaur with the given ID not found"   
+
+def get_locomotion_image_by_locomotion(locomotion):
+    if locomotion == "bipedal":
+        st.image("images/Bipedal.png", caption="Bipedal locomotion image", width=240)
+    if locomotion == "quadrupedal":
+        st.image("images/Quadrupedal.png", caption="Quadrupedal locomotion image", width=240)
 
 
 
@@ -63,12 +75,15 @@ def search():
 
     # Display the selected dinosaur's name and ID and diet and so on
     if selected_dino_name:
-        st.write(f"Selected Dinosaur Name: {selected_dino_name}")
+        st.header(selected_dino_name)
         st.write(f"Selected Dinosaur ID: {selected_dino_id}")
         # Load the data
         all_dino_data = load_all_dino_data()
         dino_id = selected_dino_id
         diet = get_diet_by_id(all_dino_data, dino_id)
+        locomotion = get_locomotion_by_id(all_dino_data, dino_id)
+        print(locomotion)
+        print(diet)
         st.write(f"The diet for dinosaur with ID {dino_id} is: {diet}")
         get_diet_image_by_diet(diet)
 

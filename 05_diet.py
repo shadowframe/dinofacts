@@ -31,12 +31,12 @@ def get_diet_by_id(dino_data, dino_id):
 
 def get_diet_image_by_diet(diet):
     if diet == "herbivore":
-        return "https://example.com/herbivore_image.png"
+        st.image("images/herbivore.png", caption="Herbivore diet image", use_container_width=True)
     if diet == "carnivore":
-        return "https://example.com/carnivore_image.png"
+        st.image("images/carnivore.png", caption="Carnivore diet image", use_container_width=True)
     if diet == "omnivore":
-        return "https://example.com/omnivore_image.png"
-    return "https://example.com/default_image.png"
+        st.image("images/omnivore.png", caption="Omnivore diet image", use_container_width=True)
+
 
 
 
@@ -61,7 +61,7 @@ def search():
     # Find the corresponding ID for the selected dinosaur
     selected_dino_id = next((dino['id'] for dino in dino_data if dino['name'] == selected_dino_name), None)
 
-    # Display the selected dinosaur's name and ID
+    # Display the selected dinosaur's name and ID and diet and so on
     if selected_dino_name:
         st.write(f"Selected Dinosaur Name: {selected_dino_name}")
         st.write(f"Selected Dinosaur ID: {selected_dino_id}")
@@ -70,6 +70,7 @@ def search():
         dino_id = selected_dino_id
         diet = get_diet_by_id(all_dino_data, dino_id)
         st.write(f"The diet for dinosaur with ID {dino_id} is: {diet}")
+        get_diet_image_by_diet(diet)
 
 # Load the data of the dinosaurs names and id´s
 dino_data = load_dino_data()

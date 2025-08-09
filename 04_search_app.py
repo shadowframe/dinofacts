@@ -18,6 +18,19 @@ def load_dino_data():
     with open("data/dino_names.json", "r") as file:  # Adjust the path if necessary
         return json.load(file)
 
+def load_all_dino_data():
+    with open("data/dino.json", "r") as file:  # Adjust the path if necessary
+        return json.load(file)
+    
+def get_diet_by_id(dino_data, dino_id):
+    # Search for the dinosaur with the matching ID
+    for dino in dino_data:
+        if dino.get("id") == dino_id:
+            return dino.get("diet", "Diet information not available")
+    return "Dinosaur with the given ID not found"
+
+
+
 ### Functions ###
 # fancy_text returns a stream of text from the stream_data function
 @st.fragment
@@ -43,6 +56,11 @@ def search():
     if selected_dino_name:
         st.write(f"Selected Dinosaur Name: {selected_dino_name}")
         st.write(f"Selected Dinosaur ID: {selected_dino_id}")
+        # Load the data
+        all_dino_data = load_all_dino_data()
+        dino_id = selected_dino_id
+        diet = get_diet_by_id(all_dino_data, dino_id)
+        st.write(f"The diet for dinosaur with ID {dino_id} is: {diet}")
 
 # Load the data of the dinosaurs names and id´s
 dino_data = load_dino_data()

@@ -31,11 +31,11 @@ def get_diet_by_id(dino_data, dino_id):
 
 def get_diet_image_by_diet(diet):
     if diet == "herbivore":
-        st.image("images/herbivore.png", caption="Herbivore diet image", use_container_width=True)
+        st.image("images/herbivore.png", caption="Herbivore diet image", width=100)
     if diet == "carnivore":
-        st.image("images/carnivore.png", caption="Carnivore diet image", use_container_width=True)
+        st.image("images/carnivore.png", caption="Carnivore diet image", width=100)
     if diet == "omnivore":
-        st.image("images/omnivore.png", caption="Omnivore diet image", use_container_width=True)
+        st.image("images/omnivore.png", caption="Omnivore diet image", width=100)
 
 
 
